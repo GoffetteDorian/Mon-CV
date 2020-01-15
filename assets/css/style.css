@@ -1,0 +1,121 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: darkgrey;
+}
+
+strong {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #3388bb;
+  text-transform: uppercase;
+  border-bottom: 3px solid #3388dd;
+}
+
+.page {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Source sans Pro", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+  padding: 40px;
+  border: 5px solid #3388cc;
+  border-radius: 10px;
+  box-shadow: 2px 4px 3px #000;
+  background: #fff;
+}
+
+.info-photo {
+  height: 250px;
+}
+
+.photo > img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #3388cc;
+}
+
+.info {
+  float: left;
+}
+
+.photo {
+  float: right;
+}
+
+.section {
+  margin-bottom: 70px;
+  text-align: justify;
+}
+
+.sec-gauche {
+  float: left;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+.sec-droite {
+  margin-left: 150px;
+  margin-top: 37px;
+}
+
+.duree {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.titre {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.titre:hover {
+  color: #3388bb;
+}
+
+#forma-gauche p {
+  margin-bottom: 37px;
+}
+
+#exp-gauche p {
+  margin-top: 32px;
+}
+
+#exp-droite p {
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+#langue-droite p {
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+#int-gauche p {
+  margin-bottom: 36px;
+}
+
+#permis:hover + #anim-voiture {
+  animation: slideRight 2s forwards;
+}
+
+#anim-voiture {
+  visibility: hidden;
+}
+
+@keyframes slideRight {
+  from {
+    visibility: visible;
+    transform: translate(180px, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
